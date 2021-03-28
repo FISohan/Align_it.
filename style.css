@@ -1,0 +1,126 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F0F8FF;
+}
+
+svg {
+  outline: 0.5px solid #c0c0c0;
+  margin-left: 5px;
+}
+
+.vab {
+  margin-top: 40px;
+  text-align: center;
+  /*
+font-family: 'Dancing Script', cursive;
+font-family: 'Indie Flower', cursive;
+*/
+}
+
+line {
+  stroke: rgb(144, 194, 209);
+  stroke-width: 3px;
+}
+
+.ctrl {
+  display: none;
+}
+
+.welcome {
+  display: initial;
+
+}
+
+.end {
+  /* height: 35% !important; */
+  display: none;
+}
+
+.winer-name-box {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.start-menu {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  /* padding-bottom: 15px; */
+  top: 15%;
+  left: 5%;
+  background: #ABCDEF;
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.idicator1 {
+  margin-right: 5px;
+  height: 10px;
+  width: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  border-radius: 50%;
+  display: none;
+}
+
+.outter-div {
+  position: absolute;
+  height: 100%;
+  transition: all ease-out 10000ms;
+  width: 100%;
+  background-color: rgba(14, 13, 13, 0.664);
+  /* display: none; */
+}
+
+.content-box {
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+  margin-left: -1%;
+  background: #dce3eb;
+  text-align: center;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  color: black;
+}
+
+button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 55px;
+  background-color: rgb(184, 216, 248);
+  border: none;
+}
+
+.play-btn {
+  background-color: #F0F8FF;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 12%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.name-box {
+  text-align: center;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(253, 4, 4);
+  opacity: 1;
+  /* Firefox */
+}

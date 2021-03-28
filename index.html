@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEVER GIVE UP</title>
+    <!-- HTML -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="outter-div" id="hide-me">
+      <div id="start-menu" class="welcome start-menu">
+        <div class="content-box">
+          <h1>Welcome</h1>
+          <br />
+          <span id="A" class="idicator1">&#8594;</span>
+          <input
+            id="nameA"
+            type="text"
+            placeholder="Enter Player name"
+            style="border-color: #007bff;"
+          />
+          <br />
+          <br />
+          <span id="B" class="idicator1">&#8594;</span>
+          <input
+            id="nameB"
+            type="text"
+            placeholder="Enter Player name"
+            style="border-color: #00ffff"
+          />
+          <br>
+          <br>
+          <button id="toss-btn">Toss</button>
+          <div id="play-btn" class="play-btn">Play</div>
+        </div>
+      </div>
+
+      <div id="end-menu" class="end start-menu">
+       <div class="win-text">
+         <br>
+         <h3 style="font-size: 1.5rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">WINNER WINNER WINNER</h3>
+       </div>
+       <div class="winer-name-box">
+         <h1 style="font-size: 3rem; font-weight: lighter; font-family: fantasy;" id="winner-name">SOHAN</h1>
+         <br>
+         <p>duration: <span id="duration">200 sec</span></p>
+       </div>
+       <div id="play-again-btn" onclick="location.reload()" class="play-btn">Play Again</div>
+      </div>
+
+    </div>
+    <br />
+    <div class="name-box">
+      <h1> <span id="Aname" style="color: #007DFF">🙂</span> <span style="font-size: 25px;color: red"><i>vss</i></span> <span id="Bname" style="color: #00FFFF">😎</span></h1>
+    </div>
+    <br />
+    <svg xmlns="http://www.wo.org/2000/svg" id="svg">
+      <!--the square -->
+      <line x1="3%" y1="3%" x2="97%" y2="3%" />
+      <line x1="3%" y1="3%" x2="3%" y2="97%" />
+      <line x1="3%" y1="97%" x2="97%" y2="97%" />
+      <line x1="97%" y1="97%" x2="97%" y2="3%" />
+      <!--the diagonals -->
+      <line x1="3%" y1="3%" x2="97%" y2="97%" />
+      <line x1="97%" y1="3%" x2="3%" y2="97%" />
+      <line x1="3%" y1="50%" x2="97%" y2="50%" />
+      <line x1="50%" y1="3%" x2="50%" y2="97%" />
+
+      <g
+        fill="white"
+        stroke="green"
+        stroke-width="1"
+        id="control-point-container"
+      >
+        <circle cx="3%" cy="3%" r="10" class="ctrl" id="1" />
+        <circle cx="50%" cy="3%" r="10" class="ctrl" id="2" />
+        <circle cx="97%" cy="3%" r="10" class="ctrl" id="3" />
+
+        <circle cx="3%" cy="50%" r="10" class="ctrl" id="4" />
+        <circle cx="50%" cy="50%" r="10" class="ctrl" id="5" />
+        <circle cx="97%" cy="50%" r="10" class="ctrl" id="6" />
+
+        <circle cx="3%" cy="97%" r="10" class="ctrl" id="7" />
+        <circle cx="50%" cy="97%" r="10" class="ctrl" id="8" />
+        <circle cx="97%" cy="97%" r="10" class="ctrl" id="9" />
+      </g>
+
+      <g id="player-A-gutti-container" fill="#007DFF" stroke="white">
+        <circle cx="3%" cy="3%" r="12" id="A1" />
+        <circle cx="50%" cy="3%" r="12" id="A2" />
+        <circle cx="97%" cy="3%" r="12" id="A3" />
+      </g>
+
+      <g id="player-B-gutti-container" fill="#00FFFF" stroke="white">
+        <circle cx="3%" cy="97%" r="12" id="B1" />
+        <circle cx="50%" cy="97%" r="12" id="B2" />
+        <circle cx="97%" cy="97%" r="12" id="B3" />
+      </g>
+      <circle
+        cx="-10%"
+        cy="-10%"
+        r="15"
+        style="stroke: rgb(240, 44, 44); fill: transparent; stroke-width: 3px"
+        id="marker"
+      />
+    </svg>
+    <!-- Project -->
+    <div class="vab">
+      <h2 style="color: #e6e6fa">
+        <span>A Loser creation:) </span>
+      </h2>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
